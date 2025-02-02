@@ -3,17 +3,11 @@ name: Test Action
 on:
   push:
     branches:
-      - main  # Ensure your branch name is correct
+      - main  # Trigger the action on the 'main' branch
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3  # Fetches repository code
-
-      - name: Print Message
-        run: echo "Hello, world!"
-
-      - name: Print GitHub Username
-        run: echo "Triggered by GitHub User: ${{ github.actor }}"
+      - name: "22f3001961@ds.study.iitm.ac.in"  # Treat email as a string in quotes
+        run: echo "Hello, world!"  # Print 'Hello, world!' in the logs
